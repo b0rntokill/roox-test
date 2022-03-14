@@ -1,0 +1,49 @@
+@import "src/scss/variables";
+
+.user-card {
+  position: relative;
+  width: 100%;
+  padding: 10px 100px 10px 10px;
+  background-color: $background-user-card;
+  border-radius: 8px;
+
+  p {
+    margin: 0;
+    padding: 0;
+    font-family: $default-font;
+    font-size: $small-text-size;
+    line-height: $small-line-height;
+    font-weight: 400;
+    color: $text-color;
+
+    &:not(:last-of-type) {
+      margin: 0 0 8px;
+    }
+
+    span {
+      margin-right: 7px;
+      color: $second-text-color;
+    }
+  }
+
+  a {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    margin-top: -20px;
+    font-family: $default-font;
+    font-size: $base-text-size;
+    line-height: $base-line-height;
+    font-weight: 400;
+    color: $link-color;
+
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+}
