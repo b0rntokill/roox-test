@@ -1,0 +1,16 @@
+@import "src/scss/variables";
+
+.user-form {
+  &__btn-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  fieldset {
+    margin: 0 0 15px;
+    padding: 20px 12px 10px;
+    border: 1px solid $form-fieldset-border-color;
+    border-radius: 8px;
+  }
+}

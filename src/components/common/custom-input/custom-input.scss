@@ -1,0 +1,46 @@
+@import "src/scss/variables";
+
+.custom-input {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  margin-bottom: 10px;
+
+  label {
+    font-family: $default-font;
+    font-size: $label-text-size;
+    line-height: $label-line-height;
+    font-weight: 400;
+    color: $text-color;
+  }
+
+  &__input {
+    width: 211px;
+    margin-top: 5px;
+    padding: 5px 10px;
+    font-family: $default-font;
+    font-size: $extra-small-text-size;
+    line-height: $extra-small-line-height;
+    font-weight: 400;
+    color: $text-color;
+    border: 1px solid $input-border-color;
+    border-radius: 5px;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.3);
+    }
+
+    &:read-only {
+      color: rgba(0, 0, 0, 0.3);
+      cursor: auto;
+    }
+
+    &--error {
+      border-color: $input-error-color;
+    }
+  }
+}

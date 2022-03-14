@@ -1,0 +1,15 @@
+@import "src/scss/variables";
+
+.sort-list-container {
+  width: 100%;
+
+  &__title {
+    margin: 0 0 10px;
+    padding: 0;
+    font-family: $default-font;
+    font-size: $base-text-size;
+    line-height: $base-line-height;
+    font-weight: 400;
+    color: $text-color;
+  }
+}

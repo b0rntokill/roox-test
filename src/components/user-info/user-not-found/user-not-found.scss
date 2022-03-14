@@ -1,0 +1,8 @@
+@import "src/scss/variables";
+
+.user-not-found {
+  h2 {
+    font-family: $default-font;
+    $text-color: $black;
+  }
+}
